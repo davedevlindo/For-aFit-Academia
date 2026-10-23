@@ -1,0 +1,772 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Inclusive Sans", sans-serif;
+}
+
+#cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.35) 85%, rgba(0, 0, 0, 0) 100%);
+    z-index: 10;
+}
+
+.logoacademia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.logoacademia img {
+    width: 60px;
+}
+
+.logotexto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.linha1texto {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.linha2texto {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.azuldestaque {
+    color: #00A7E1;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.iconmenu {
+    width: 70px;
+    height: 70px;
+}
+
+#inicio
+{
+    background-image: url("Imagens/MainImg.png");
+    background-size: cover;
+    background-position: 75% center;
+
+    min-width: 100vh;
+    min-height: 96vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+}
+
+.tituloprincipal
+{
+    font-size: 5rem;
+    font-family: Impact, sans-serif;
+    font-style: normal; 
+    letter-spacing: .3rem;
+}
+
+.subtitulo
+{
+    font-size: 1.1rem;
+    max-width: 28rem;
+}
+
+#botoes-inicio {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+#botao-principal {
+  background-color: #00A7E1;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+#botao-secundario {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#trilho {
+    background-color: #007EA7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    font-size: 1rem;
+}
+
+#areaprincipal
+{
+    background-color: #00171F; 
+    color: white;
+    z-index: 3;
+}
+
+.conteudo 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 3.5rem 2.5rem; 
+}
+
+.qualidades
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.qualidadeselemento
+{
+    display: flex;
+    flex-direction: column;
+    width: 26vw;
+    min-height: 35vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    background-color: #007EA7;
+    padding: 20px;
+    overflow: hidden; /* olha só, isso aqui é bom para esconder conteúdo de dentro que querer sair (caso mexa na janela) */
+}
+
+.qualidadeselemento > a
+{
+    margin-top: auto;
+}
+
+.qualidadeselemento > h3
+{
+    font-size: 1.6vw;
+    padding-bottom: 1.4rem;
+}
+
+.qualidadeselemento > p
+{
+    font-size: 1.25vw;
+    padding-bottom: 1.8rem;
+}
+
+.iconequalidade
+{
+    width: 8.5vw;
+}
+
+.botaocard {
+  background-color: #00A7E1;
+  color: white;
+  text-decoration: none;
+  max-width: 10rem;
+  max-height: 5rem;
+  padding: .6rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.titulo
+{
+    align-self: flex-start;
+    font-size: 4rem;
+    font-style: normal; 
+}
+
+.botaonav
+{
+    width: 60px;
+    height: 60px;
+    filter: invert(1);
+    opacity: .5;
+}
+
+.botaonav2 
+{
+    width: 60px;
+    height: 60px;
+    /* precisei usar esse tal de "filter" porque não achei a imagem certa pra colocar */
+    filter: invert(1);
+    transform: rotate(180deg);
+}
+
+.indicadores
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.bolinha {
+  width: 1rem;
+  height: 1rem;
+  background-color: #00A7E1;
+  border-radius: 50%;
+}
+.bolinhadestaque {
+  width: 1rem;
+  height: 1rem;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+
+#principaisqualidades
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobreaacademia
+{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.imagemdestaque
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    padding: 3.5vw 0 1vw;
+}
+
+.imagemdestaque > img
+{
+    width: 70vw;
+    max-height: 80vw;
+}
+
+.imagemdestaque > div
+{
+    min-height: 30vw;
+    max-height: 80vw;
+    width: 3vw;
+    background-color: #007EA7;
+}
+
+#sobreaacademia > p
+{
+    max-width: 65vw;
+    font-size: 1.5vw;
+}
+
+#experiencias
+{
+    padding: 40px 0 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+#experiencias > h2
+{
+    font-size: 2vw;
+    max-width: 24vw;
+}
+
+#areaprofissionais
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E6E6E6;
+}
+
+.profissionais
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vw;
+    background-color: #E6E6E6;
+}
+
+.infoprofissional
+{
+    padding: 20px 0;
+    max-width: 40vw;
+}
+
+.infoprofissional > img 
+{
+    max-width: 40vw;
+    border-radius: 30px;
+    padding-bottom: 15px;
+}
+
+.infoprofissional > h2
+{
+    font-size: 2.5vw;
+    padding-bottom: 10px;
+}
+
+.infoprofissional > p 
+{
+    font-size: 1.5vw;
+}
+
+.azulclarodestaque
+{
+    color: #5DC1E2;
+}
+
+#divisao
+{
+    background-image: url(Imagens/Academia\ ForçaFit\ em\ Azul\ Neon.png);
+    background-size: cover;
+    background-position: center 35%;
+    min-height: 45vw;
+}
+
+#areamodalidades
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #00171F;
+    color: white;
+}
+
+.modalidades
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+    gap: 5vw;
+    background-color: #00171F;
+}
+
+.infomodalidade
+{
+    padding: 5px 0 0;
+    max-width: 40vw;
+}
+
+.infomodalidade > img 
+{
+    max-width: 40vw;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.infomodalidade > h2
+{
+    font-size: 2.5vw;
+    padding-bottom: 10px;
+}
+
+.infomodalidade > p 
+{
+    font-size: 1.5vw;
+    color: white;
+}
+
+#areaplanos
+{
+    background-color: #003459;
+    color: white;
+}
+
+.titulo-centro
+{
+    align-self: center;
+    font-size: 4rem;
+    font-style: normal;
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: 5px;
+}
+
+.planos
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.infoplano
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26vw;
+    min-height: 35vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    background-color: #00171F;
+    padding: 20px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.infoplano > h2
+{
+    font-size: 2.5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.infoplano > h3
+{
+    font-size: 2vw;
+    margin-bottom: 30px;
+}
+
+.infoplano > ul
+{
+    list-style: none;
+    text-align: center;
+    padding-bottom: 20px;
+
+    max-width: 20vw;
+    max-height: 25vw;
+
+    overflow: hidden; /* esconder se a lista sair vazando do quadrado*/
+}
+
+.infoplano li
+{
+    color: #007EA7;
+    font-size: 1.5vw;
+    margin-bottom: .8vw;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.infoplano > ul > li > img
+{
+    max-width: 30px;
+}
+
+.infoplano > p
+{
+    position: absolute;
+    left: 60%;
+    bottom: 92%;
+
+    min-width: 12vw;
+}
+
+.botaoplano
+{
+    position: absolute;
+    bottom: 0;                     
+    left: 50%;                       
+    transform: translate(-50%, 50%);
+
+    background-color: #00A7E1;
+    color: white;
+    text-decoration: none;
+    padding: .8rem 3rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+    white-space: nowrap; /* aqui é um comando q achei para o texto não quebrar quando tiver apertado, ficou melhor quando a janela é pequena */
+}
+
+.textomiudo
+{
+    font-size: .8vw;
+}
+
+.textograudo
+{
+    font-size: 2.4vw;
+}
+
+#areaavaliacao
+{
+    background-color: #00171F;
+    color: white;
+}
+
+.avaliacoes
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#divavaliacao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botaoavaliar
+{
+    align-self: self-start;                   
+
+    background-color: #00A7E1;
+    color: white;
+    text-decoration: none;
+    padding: .8rem 3rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.imgavaliacao
+{
+    position: relative;
+
+    background-image: url("Imagens/Treino\ com\ força\ e\ confiança.png");
+    background-size: cover;
+
+    min-width: 70vw;
+    height: 35vw;
+
+    background-position: 10%;
+
+    border-radius: 20px;
+}
+
+.imgavaliacao > div
+{
+    width: 28vw;
+    height: 15vw;
+
+    border-radius: 20px;
+    outline: black solid 3px;
+
+    position: absolute;
+    left: 56%;
+    bottom: 10%;
+
+    padding: 20px;
+
+    background-color: #003459;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.tituloavaliacao
+{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 2.5vw;
+
+    margin-bottom: 15px;
+}
+
+.textoavaliacao
+{
+    font-family: "Inclusive Sans", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+
+    max-width: 25vw;
+
+    margin-bottom: 15px;
+}
+
+#areacadastro
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagens/Pressão\ e\ disciplina\ na\ academia.png');
+    background-size: cover;
+    background-position: 75% center;
+
+    min-height: 40vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+}
+
+.titulocadastro
+{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 3vw;
+
+    margin-bottom: 15px;
+}
+
+.subtitulocadastro
+{
+    max-width: 40vw;
+    color: rgba(255, 255, 255, 0.9); /* Preto com 50% de transparência */
+}
+
+#formregistro
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    margin: 25px;
+}
+
+#formregistro > input
+{
+    padding: 12px 10px;
+    min-width: 30vw;
+    border-radius: 20px;
+    
+    background-color: #003459;
+    color: rgba(255,255,255, .9);
+    font-size: 1.1vw;
+}
+
+#formregistro > a
+{
+    position: absolute;
+    right: 0;
+    transform: translate(1%, 1%);
+}
+
+#botaoregistro {
+  background-color: #00A7E1;
+  color: white;
+  text-decoration: none;
+  padding: 13px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+
+footer
+{
+    background-color: #00171F;
+    min-height: 25vw;
+    color: rgba(255, 255, 255, .8);
+
+}
+
+footer img
+{
+    max-width: 5vw;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+#rodape
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    min-width: 100%;
+}
+
+#redesfooter 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#redesfooter > p
+{
+    font-size: 1.5vw;
+    max-width: 15vw;
+}
+
+#redesfooter > div
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#opcoesrodape
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    text-align: center;
+}
+
+#opcoesrodape h3
+{
+    margin-bottom: 20px;
+}
+
+#opcoesrodape ul
+{
+    list-style: none;
+    text-align: center;
+}
+
+#opcoesrodape li
+{
+    padding: 8px 0;
+}
+
+#divisaocopyright
+{
+    width: 100vw;
+    height: .6vw;
+    background-color: #D9D9D9;
+}
+
+footer > .conteudo > p
+{
+    align-self: flex-start;
+}
