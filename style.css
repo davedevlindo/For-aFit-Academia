@@ -357,7 +357,7 @@ body {
 
 #divisao
 {
-    background-image: url(Imagens/Academia\ ForçaFit\ em\ Azul\ Neon.png);
+    background-image: url("Imagens/Academia.png");
     background-size: cover;
     background-position: center 35%;
     min-height: 45vw;
@@ -568,7 +568,7 @@ body {
 {
     position: relative;
 
-    background-image: url("Imagens/Treino\ com\ força\ e\ confiança.png");
+    background-image: url("Imagens/Dona.png");
     background-size: cover;
 
     min-width: 70vw;
@@ -618,7 +618,7 @@ body {
 
 #areacadastro
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagens/Pressão\ e\ disciplina\ na\ academia.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Imagens/Disciplina.png");
     background-size: cover;
     background-position: 75% center;
 
